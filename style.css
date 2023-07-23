@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body, html {
+    height: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+
+    max-height: 100vh;
+
+}
+
+/* sidebar */
+.sidebar {
+    grid-column: 1;
+    grid-row: 1 / -1;
+    background-color: #2cade9;
+
+    display: grid;
+    grid-template-rows: 1fr 4fr 5fr;
+}
+
+.sidebar > * {
+    color: white;
+    margin-left: 50px;
+    margin-bottom: 30px;
+
+    font-size: 1.5rem;
+}
+
+/* branding */
+.sidebar .branding {
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+.cat-logo {
+    width: 30px;
+}
+
+/* navigations & settings*/
+.sidebar > .navigations > ul > li,
+.sidebar > .settings > ul > li {
+    margin-bottom: 20px;
+}
+
+
+/* HEADER*/
+.header {
+    grid-column: 2;
+    background-color: white;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.header .search-profile {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+} */
+
+body > div > div.header > div.search-profile > form {
+    justify-self: center;
+}
+
+body > div > div.header > div.search-profile > form > input[type=text] {
+    border-radius: 10px;
+    border: none;
+    width: 600px;
+    height: 30px;
+    background-color: #d1d5db;
+}
+
+.profile {
+    justify-self: center;
+}
+
+/* content */
+.content {
+    grid-column: 2;
+    background-color: #d1d5db;
+}
